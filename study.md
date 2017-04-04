@@ -134,7 +134,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, give a brief description of what HTTP is.
 
 ```md
-<!-- your answer here -->
+<!-- HTTP is a text-based protocol that allows messages to be sent back and forth
+(almost always initiating with the client that accesses the server via an
+IP Address/web address) on the internet.  HTTPS is the secure version. -->
 ```
 
 ## Describe what a client is and what a server is
@@ -142,7 +144,10 @@ In your own words, give a brief description of what HTTP is.
  What is a client and what is a server? How do they interact with each other?
 
 ```md
-<!-- your answer here -->
+<!-- A "client" is a personal computer or device.  A server is a different kind
+of computer which is used to store data.  some servers are used only for
+internal business, but others are web servers and they host websites.  clients
+access the servers by typing in their web address -->
 ```
 
 ## Describe the 4 most common HTTP verbs
@@ -151,7 +156,14 @@ What are the 4 most common HTTP verbs used when creating a RESTful API. How
 would you use each?
 
 ```md
-<!-- your answer here -->
+<!-- GET, POST, PUT and DELETE.  The GET method instruct the server to send
+the data back to the client that has requested access to the website it's
+hosting.
+POST and PUT seem to be interchangeable.  POST requests submit data and are not
+saved cached or saved in the browser's history.  PUT requests are used when you
+want to update a resource ID'ed by the URL.  POST and PUT are sometimes used to
+create and update operations, too.
+DELETE is used when you want to delete the resource ID'ed by the URL. -->
 ```
 
 ## Describe what a Response is
@@ -160,7 +172,12 @@ What is a response? What does it contain? What are some common status codes in a
 response and what do they mean?
 
 ```md
-<!-- your answer here -->
+<!-- A response should let the client know the content type of the body.  This
+metadata is located in the header.  The response I'm most familiar with is the
+404 Not Found (which means the website couldn't be found on the server).
+401 means you're not authorized for access, or you need to provide authorization
+for access.
+500 Internal Server error means there's something wrong with the server. -->
 ```
 
 ## Make a curl request
@@ -168,7 +185,7 @@ response and what do they mean?
 Using curl, how would you get the content from Reddit.com?
 
 ```md
-<!-- your answer here -->
+<!-- curl -v Reddit.com -->
 ```
 
 ## Describe the parts of a URL
@@ -178,5 +195,23 @@ refer to this list often in the next few weeks, so it's important to keep it in
 an easy-to-reference place.
 
 ```md
-<!-- your answer here -->
+<!--
+"http" is the protocol, which is required and allows for information to be
+shared between the client and the server.
+"www.website.com" is the domain name.  the domain name was created because it's
+easier to remember than an ip address, which is what it represents.
+"80/443" are the ports or gates which gives the client access to the web server.
+80 is http and 443 is https (secured).  the user generally doesn't see these
+numbers, or have to type them in.
+"path to the file" looks really similar to the paths we use in CLI, and I think
+it's the basically the same thing: it's the path to the resources on the web
+server.
+"parameters" can do execute different tasks before sending info to the client?
+i'm not 100% sure on this one.  sounds like it's just additional info the server
+can deliver.
+"anchor" is a spot on the website/web document that the user will land on, if
+the design has the user end up there.  it could be a video, a submit box, or
+what-have-you.
+
+ -->
 ```
